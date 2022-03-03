@@ -1,0 +1,74 @@
+  <body>
+    <div class="calendar" id="calendar">
+      <div class="container">
+        <div
+          class="calendar-btn month-btn"
+          onclick="$('#months').toggle('fast')"
+        >
+          <span id="curMonth"></span>
+          <div id="months" class="months dropdown"></div>
+        </div>
+
+        <div class="calendar-btn modal-btn">
+          <div id="myBtn">Choose Appointment</div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>Appointments for <span id="back-date">{{userSomething.firstname}}</span></h1>
+                {{#each appointments}}
+                  <div class="container" id={{id}}>
+                    <div>
+                      <p>
+                        <span class="Appointments_date">{{Appointments_date}}</span> |
+                        <span class="Appointments_time">{{Appointments_time}}:00</span> |
+                        <span class="Appointments_text">{{Appointments_text}}</span>
+                      </p>
+                    </div>
+                  <div>
+                    <button id="submit-{{id}}" type="submit">Add</button>
+                  </div>
+                  </div>
+                {{/each}}
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-btn year-btn" onclick="$('#years').toggle('fast')">
+          <span id="curYear"></span>
+          <div id="years" class="years dropdown"></div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="calendar-dates">
+        <div class="days">
+          <div class="day label">MON</div>
+          <div class="day label">TUE</div>
+          <div class="day label">WED</div>
+          <div class="day label">THU</div>
+          <div class="day label">FRI</div>
+
+          <div class="clear"></div>
+        </div>
+
+        <div id="calendarDays" class="days"></div>
+      </div>
+    </div>
+    <h3>Create Appointments</h3>
+    <form class="new-appt-form">
+      <div class="field">
+      <label class="label" for="Appointments_time">Time</label>
+      <input class="input-appt" type="text" id="Appointments_time" name="Appointments_time" placeholder="Note: only 1-8 allowed"/>
+    </div><div class="field">
+      <label class="label" for="Appointments_date">Date</label>
+      <input class="input-appt" type="text" id="Appointments_date" name="Appointments_date" placeholder="ie: 15"/>
+    </div><div class="field">
+      <label class="label" for="Appointments_type">Type</label>
+      <input class="input-appt" type="text" id="Appointments_type" name="Appointments_type" placeholder="ie: Consult"/>
+    </div>
+    </form>
+  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/javascript/calendar.js"></script>
+<script src="/javascript/appointments.js"></script>

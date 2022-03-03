@@ -26,6 +26,6 @@ const userdata = [
     },
   ];
   
-  const seedsTime = () => Time.bulkCreate(userdata);
-  
+  const seedsTime= () => Time.bulkCreate(userdata, {individualHooks: true});
+
   module.exports = seedsTime;
