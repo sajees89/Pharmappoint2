@@ -125,6 +125,12 @@
   button:hover {
     background-color: #3486eb;
   }
+
+  .signup-txt {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 20px;
+  }
   
   .post-list {
     margin: 0;

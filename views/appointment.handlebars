@@ -10,7 +10,7 @@
         </div>
 
         <div class="calendar-btn modal-btn">
-          <div id="myBtn">Choose Appointment</div>
+          <div id="myBtn">PharmAppoint Book Appt</div>
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
@@ -41,34 +41,16 @@
 
       <div class="clear"></div>
 
-      <div class="calendar-dates">
-        <div class="days">
-          <div class="day label">MON</div>
-          <div class="day label">TUE</div>
-          <div class="day label">WED</div>
-          <div class="day label">THU</div>
-          <div class="day label">FRI</div>
-
-          <div class="clear"></div>
-        </div>
-
-        <div id="calendarDays" class="days"></div>
-      </div>
-    </div>
-    <h3>Create Appointments</h3>
-    <form class="new-appt-form">
-      <div class="field">
-      <label class="label" for="Appointments_time">Time</label>
-      <input class="input-appt" type="text" id="Appointments_time" name="Appointments_time" placeholder="Note: only 1-8 allowed"/>
-    </div><div class="field">
-      <label class="label" for="Appointments_date">Date</label>
-      <input class="input-appt" type="text" id="Appointments_date" name="Appointments_date" placeholder="ie: 15"/>
-    </div><div class="field">
-      <label class="label" for="Appointments_type">Type</label>
-      <input class="input-appt" type="text" id="Appointments_type" name="Appointments_type" placeholder="ie: Consult"/>
-    </div>
-    </form>
+    <h3>Book an Appointment</h3>
+     <form>
+        <input type="radio" id="covidtest" name="appt_type" value="covidtest">
+        <label for="covidtest">COVID Test</label><br>
+        <input type="radio" id="covidshot" name="appt_type" value="CSS">
+        <label for="covidshot">COVID Shot</label><br>
+        <input type="radio" id="flushot" name="appt_type" value="flushot">
+        <label for="flushot">FLU Shot</label>
+      </form>
   </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
 <script src="/javascript/calendar.js"></script>
 <script src="/javascript/appointments.js"></script>
