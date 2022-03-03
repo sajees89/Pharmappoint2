@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
       console.log(userSomething.firstname);
       res.render('homepage', {
         appointments,
-        loggedIn: true,
+        loggedIn: req.session.loggedIn,
         user_id,
         firstname: userSomething.firstname,
       });

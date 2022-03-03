@@ -18,7 +18,9 @@ router.use('/view', viewRoutes);
 
 
 router.use('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    loggedIn: req.session.loggedIn
+  });
 });
 
 

@@ -39,6 +39,6 @@ const sess = {
   
   app.use(require('./controllers/'));
   
-  sequelize.sync({ force: false }).then(() => {
+  sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
   });
