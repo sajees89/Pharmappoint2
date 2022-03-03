@@ -32,8 +32,6 @@ const sess = {
   app.engine('handlebars', hbs.engine);
   app.set('view engine', 'handlebars');
 
-
-const models = require('./models');
   
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));

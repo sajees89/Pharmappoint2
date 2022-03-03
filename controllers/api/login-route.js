@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { User } = require("../../models");
 
 
-// should be domain/api/login
 router.get('/', async (req, res) => {
     res.render('login');
 });
