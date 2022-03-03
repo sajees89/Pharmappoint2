@@ -1,7 +1,11 @@
 const router = require('express').Router();
 const apiRoutes = require('./api');
+const viewRoutes = require('./view'); 
+
+
 
 router.use('/api', apiRoutes);
+router.use('/view', viewRoutes);
 
 // const loginRoute = require('./api/login-route');
 // const appointmentRoute = require('./api/appointment-route');
