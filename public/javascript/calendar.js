@@ -20,4 +20,4 @@ async function calendarFormHandler(event){
     }
 };
 
-document.querySelector('#appointment-form').addEventListener('submit', calendarFormHandler)
+document.querySelector('#appointment-form').addEventListener('submit', calendarFormHandler); 
