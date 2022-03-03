@@ -19,7 +19,7 @@ if (email && password) {
 
     console.log(await response.json());
     if (response.ok) {
-      document.location.replace('/api/homepage');
+      document.location.replace('/view/homepage');
     } else {
       alert((await response.json()).message);
     }

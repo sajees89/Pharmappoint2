@@ -20,7 +20,7 @@ Appointment.init(
       },
     },
     Appointments_date: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DATEONLY,
       allowNull: false,
     },
     Appointments_type: {

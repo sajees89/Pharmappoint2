@@ -19,7 +19,7 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/api/homepage');
+        document.location.replace('/view/homepage');
       } else {
         alert(response.statusText);
       }

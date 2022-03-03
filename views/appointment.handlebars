@@ -1,5 +1,5 @@
-  <body>
-    <div class="calendar" id="calendar">
+<link rel="stylesheet" href="/stylesheets/datepicker.min.css">
+      <div class="calendar" id="calendar">
       <div class="container">
         <div
           class="calendar-btn month-btn"
@@ -41,15 +41,31 @@
 
 
     <h3>Book an Appointment</h3>
-     <form>
+     <form id="appointment-form">
         <input type="radio" id="covidtest" name="appt_type" value="covidtest">
         <label for="covidtest">COVID Test</label><br>
         <input type="radio" id="covidshot" name="appt_type" value="CSS">
         <label for="covidshot">COVID Shot</label><br>
         <input type="radio" id="flushot" name="appt_type" value="flushot">
         <label for="flushot">FLU Shot</label>
+        <h3 >Appointment Date & Time:</h3>
+        <p>SelectDate: 
+          <input type = "text" id = "datepicker-1" autocomplete="off">
+        </p>  
+        <p>Select Time: 
+          <select id="selecttime" name="availabletime">
+            <option value="1">10:00 </option>
+            <option value="2">11:00</option>
+            <option value="3">12:00</option>
+            <option value="4">13:00</option>
+            <option value="5">14:00</option>
+            <option value="6">15:00</option>
+            <option value="7">16:00</option>
+          </select></p>
+
+          <button type="submit" class="btn">Submit</button>
       </form>
-  </body>
 
 <script src="/javascript/calendar.js"></script>
+<script src="/javascript/datepicker.js"></script>
 <script src="/javascript/appointments.js"></script>
