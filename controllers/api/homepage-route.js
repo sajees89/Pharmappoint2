@@ -24,8 +24,7 @@ router.get('/', (req, res) => {
             appointments.map(appointment => appointment.get({ plain: true }))
           )
         : null;
-  
-      // console.log(appointments)
+        
       const userSomething = User.findOne({
         where: {
           id: user_id,

@@ -3,7 +3,7 @@ const { User } = require('../../models');
 
 
 router.get('/', (req, res) => {
-  //get route code here
+
   res.render('signup');
 });
 

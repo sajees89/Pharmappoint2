@@ -47,7 +47,7 @@ async function adminApptHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/api/appointment');
+    document.location.replace('/api/homepage');
   } else {
     alert(response.statusText);
   }
