@@ -1,4 +1,4 @@
-const users = [];
+// const users = [];
 
 async function loginFormHandler(event){
   event.preventDefault();
@@ -20,9 +20,11 @@ if (email && password) {
     console.log(await response.json());
     if (response.ok) {
       document.location.replace('/view/homepage');
-    } else {
-      alert((await response.json()).message);
-    }
+    } 
+    
+    // else {
+    //   alert((await response.json()).message);
+    // }
   }
 }
 
